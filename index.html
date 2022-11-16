@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="shortcut icon"  href="bookIcon.svg">
+    <link rel="stylesheet" href="styles.css">
+   
+</head>
+<body>
+<div class="top"> Library </div>
+<div class="container"> 
+  <div type = "button" class = "addBook"> Add book </div>
+</div>
+<div class="popup"> 
+  <div class="popup-content">
+    <div class="closeForm" > + </div>
+    <div class = "form"> 
+        <form  class="formContainer" id = "formContainer" >
+        <div class="book-heading"> <h3>New Book</h3> </div>
+        <div> <label for="title"> </label>
+        <input type="text" id="title" placeholder="Title" name="title" > </div>
+        <div class = errorT id = error> </div>
+        <div> <label for="author">  </label>
+        <input type="text" id="author" placeholder="Author Name" name="author" > </div>
+        <div class = errorA id = error> </div>
+        <div> <label for="pages"></label>
+        <input type="number" id = "pages" placeholder = "Pages" name = "pages" ></div>
+        <div class = error id = error> </div>
+        <div> <p><label >Read: </label><input type='checkbox' id='read' name='read' value='yes'></p> </div>
+        <div><button type="button" class="btnSubmit" > Add</button></div>
+        </form>
+    </div>   
+  </div>
+</div>
+
+
+<div class = "bookContainer"> 
+  <h3>Book List</h3>
+  <div class = "listitems">
+    <div  class  ="bookDisplay" ></div> 
+  </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>

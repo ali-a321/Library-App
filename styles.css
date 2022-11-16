@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  body {
+   
+    min-height: 100vh;
+    margin: 0;
+    background-color: whitesmoke;
+  }
+
+
+.top{
+   
+    font-size: 3rem;
+    box-shadow: 0px 5px #888888 ;
+    background-color: white;
+    padding: 1rem;
+    padding-left: 4rem;
+}
+.form{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    flex-direction: column;
+
+}
+.bookDisplay {
+    font-size: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+img{
+    max-width: 1rem;
+}
+
+.popup{
+    background: rgba(0,0,0,0.6);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 30;
+}
+
+.popup-content{
+    height: 300px;
+    width: 60vh;
+    background:whitesmoke;
+    border-radius: 15px;
+    position: relative;
+    text-align: center;
+    font-size: 1rem  ;
+    
+
+}
+.addBook{
+    display: inline-block;
+    font-size: 2rem;
+    border-radius: 15px;
+    background-color: green;
+    width: 10rem;
+    cursor: pointer;
+    color: white;
+}
+
+.addBook:hover{
+    transform: scale(1.1) perspective(1.1px)
+}
+.container{
+  
+    text-align: center;
+    display: block;
+    margin-top: 1rem;
+    
+}
+input{
+    margin-top: 0.5rem ;
+    margin-bottom: 0.5rem;
+}
+
+input[type = text] {
+    width: 11rem;
+
+}
+input[type = number] {
+    width: 11rem;
+}
+
+.btnSubmit{
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    cursor: pointer;
+    width: 3rem;
+}
+
+#error {
+    color:red ;
+    font-size: 0.8rem;
+}
+
+.closeForm{
+    position: absolute;
+    right: 0;
+    font-size: 42px;
+    transform: rotate(45deg);
+    padding-right: 10px;
+    cursor: pointer;
+    
+}
+
+.bookContainer{
+    margin-left: 4rem;
+}
+
+.book-read{
+    display: flex;
+}
+.book-read-title{
+    padding-right: 1.5rem;
+}
+.book-card{
+    border-radius: 10px;
+    background-color: lightgray;
+    border-left: 3px solid orange;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    min-width: 10rem;
+    padding: 0.6rem;
+    position: relative;
+    margin-right: 1rem;
+    margin-top: 1rem;
+    z-index: 10;
+    padding-right: 1rem;
+    
+}
+.read-yes{
+border-left: 3px solid green;
+}
+
+.read-no {
+border-left: 3px solid orange;
+  
+}
+.delete{
+    float: right;
+    margin:5px 5px 0 0;
+    position: absolute;
+    top: 0;
+    right: 0;    
+}
+
+.editBtn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 14px;
+  height: 1.2rem;
+  border-radius: 6px;
+  border: none;
+    font-size: 1rem;
+  background: #6E6D70;
+  box-shadow: 0px 0.5px 1px rgba(0, 0, 0, 0.1), inset 0px 0.5px 0.5px rgba(255, 255, 255, 0.5), 0px 0px 0px 0.5px rgba(0, 0, 0, 0.12);
+  color: #DFDEDF;
+
+}
+
+
