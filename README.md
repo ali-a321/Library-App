@@ -1,2 +1,2 @@
 # Library-App
-Classes, Forms, Pop-ups, local storage
+Built with HTML, CSS, and JavaScript. A web application for managing a personal book library. Users can add, edit, and delete books from their collection. The app provides an interface where books are displayed with details such as title, author, pages, and a "read" status. Users can mark books as "read" by checking a checkbox. It incorporates error handling to ensure accurate data entry when adding or editing books. The library data is stored in local storage.
